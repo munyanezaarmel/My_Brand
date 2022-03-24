@@ -34,6 +34,11 @@ function PageTransitions(){
         let el=document.body;
         el.classList.toggle('light-mode')
     })
+    //send email 
+  
+     
+    
+    
 
 }
 PageTransitions();
