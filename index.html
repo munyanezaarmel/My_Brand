@@ -382,7 +382,7 @@
                 </div>
             </div>
         </section>
-        <section class="section sec4 " id="login">
+        <section class="section sec6 " id="login">
 
             <div class="main-title">
                 <h2>Welcome Back <span>!!!</span><span class="bg-text">Log in </span></h2>
@@ -395,8 +395,43 @@
 
            </form>
             </section>
-            <section class="section sec6 " id="dashboard">
-  <h4>hy</h4>
+            <section class="section sec7 "id="dash">
+                <input type="checkbox" id="check">
+                <label for="check">
+                  <i class="fas fa-bars" id="btn"></i>
+                  <i class="fas fa-times" id="cancel"></i>
+                </label>
+                <div class="sidebar">
+                  <header>My Menu</header>
+                  <a href="#" class="active">
+                    <i class="fas fa-qrcode"></i>
+                    <span>Dashboard</span>
+                  </a>
+                  <a href="#">
+                    <i class="fas fa-link"></i>
+                    <span>Shortcuts</span>
+                  </a>
+                  <a href="#">
+                    <i class="fas fa-stream"></i>
+                    <span>Overview</span>
+                  </a>
+                  <a href="#">
+                     <i class="fas fa-calendar"></i>
+                    <span>Events</span>
+                  </a>
+                  <a href="#">
+                    <i class="far fa-question-circle"></i>
+                    <span>About</span>
+                  </a>
+                  <a href="#">
+                    <i class="fas fa-sliders-h"></i>
+                    <span>Services</span>
+                  </a>
+                  <a href="#">
+                    <i class="far fa-envelope"></i>
+                    <span>Contact</span>
+                  </a>
+                </div>
             </section>
     </main>
 
@@ -419,7 +454,7 @@
         <div class="control control-6" data-id="login">
             <i class="fas fa-user"></i>
         </div>
-        <div class="control control-6" data-id="dashboard">
+        <div class="control control-7" data-id="dash">
             <i class="fa fa-align-justify"></i>
         </div>
     </div>
@@ -428,8 +463,8 @@
         <i class="fas fa-adjust"></i>
     </div>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script defer src="script.js" ></script>
-    <script defer>
+    <script src="script.js" ></script>
+    <script>
         //declaring variables
         const form=document.querySelector('.form');
         function sendMsg(e){
