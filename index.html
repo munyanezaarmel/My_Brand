@@ -408,7 +408,24 @@
 <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="script.js" defer charset="utf-8"></script>
     <script>
-
+        //declaring variables
+        const form=document.querySelector('.form');
+        function sendMsg(e){
+        e.preventDefault();
+        const email=document.querySelector('.email');
+        const button=document.querySelector('.button');
+//sending email
+Email.send({
+    SecureToken :"7ea9eb32-cb17-47ca-99c9-7b69b33ed028",
+    To : 'munyaarmel61@gmail.com',
+    From : email.value,
+    Subject : "This is the subject",
+    Body : "thanks for subscribing check your email"
+}).then(
+  message => alert(message)
+);
+        }
+        form.addEventListener('submit',sendMsg)
     </script>
     
 </body>
