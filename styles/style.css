@@ -194,10 +194,10 @@ section {
 }
 
 .theme-btn {
-  top: 5%;
+  top: 2%;
   right: 3%;
-  width: 70px;
-  height: 70px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: var(--color-grey-4);
   cursor: pointer;
@@ -1013,7 +1013,7 @@ section {
 .button {
   background-color: var(--color-secondary);
   width: 20%;
-  height: 30%;
+  height: 50%;
   border-radius: 30px;
 }
 
@@ -1035,6 +1035,28 @@ section {
   width: 40%;
   color: var(--color-white);
   resize: none;
+}
+
+.form-login input, .form-login button {
+  margin-left: auto;
+  margin-right: auto;
+  margin: 1.5rem 0;
+  color: var(--background-secondary);
+  border-radius: 30px;
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  padding: .8rem 1.1rem;
+  outline: none;
+  border: none;
+  background-color: var(--color-grey-5);
+  width: 40%;
+  color: var(--color-white);
+  resize: none;
+}
+
+.forget {
+  color: var(--color-secondary);
 }
 
 .about-container .left-about p {
