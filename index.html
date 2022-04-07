@@ -382,11 +382,11 @@
                 </div>
             </div>
         </section>
-        <section class="section sec6 " id="login">
+        <section class="section sec6 "id="login">
             <div class="main-title">
                 <h2>Welcome Back <span>!!!</span><span class="bg-text">Log in </span></h2>
             </div>
-           <form action="" class="form-login">
+           <form  class="form-login">
                <input type="email"placeholder="Enter your Email "><br>
                <input type="password"placeholder="Enter your password "><br>
                 <button>Log In</button><br>
@@ -433,7 +433,7 @@
             </section>
     </main>
     <div class="controlls">
-        <div class="control  control-1 active-btn" data-id="home" >
+        <div class="control  control-1 active-btn" data-id="home">
             <i class="fas fa-home"></i>
         </div>
         <div class="control control-2 " data-id="about">
@@ -459,28 +459,8 @@
     <div class="theme-btn">
         <i class="fas fa-adjust"></i>
     </div>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="script.js" ></script>
-    <script>
-        //declaring variables
-        const form=document.querySelector('.form');
-        function sendMsg(e){
-        e.preventDefault();
-        const email=document.querySelector('.email');
-        const button=document.querySelector('.button');
-//sending email
-Email.send({
-    SecureToken :"7ea9eb32-cb17-47ca-99c9-7b69b33ed028",
-    To : 'munyaarmel61@gmail.com',
-    From : email.value,
-    Subject : "This is the subject",
-    Body : "thanks for subscribing check your email"
-}).then(
-  message => alert(message)
-);
-        }
-        form.addEventListener('submit',sendMsg)
-    </script>
+    <script src="script.js" defer ></script>
+    
     
 </body>
 </html>
