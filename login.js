@@ -26,12 +26,15 @@ contactform.addEventListener('submit',(e)=>{
 */
 //sign in google
 function onSignIn(googleUser) {
-    var profile = googleUser.getBasicProfile();
+var profile = googleUser.getBasicProfile();
+/*
 $("#name").text(profile.getName())
 $("#email").text(profile.getEmail())
 $("#image").attr('src',profile.getImageUrl())
-$('.data').css('display',"block")
+$('.data').css('display',"block") 
+*/
 $('.g-signin2').css('display','none')
+
   }
   //sign out in google
   function signOut() {
@@ -39,6 +42,6 @@ $('.g-signin2').css('display','none')
     auth2.signOut().then(function () {
      alert('User signed out.');
      $('.g-signin2').css('display','block')
-     $('.data').css('display',"none")
+    // $('.data').css('display',"none")
     });
   }
