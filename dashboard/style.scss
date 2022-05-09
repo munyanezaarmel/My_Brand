@@ -16,10 +16,12 @@
 
 }
 
+
 body{
     background:var(--bg);
     overflow-x: hidden;
 }
+
 #menu-toggle{
  display:none;
 }
@@ -81,6 +83,7 @@ img{
 
  
 }
+
 .sidebar-menu a span:first-child{
     display: inline-block;
     margin-right:.8rem;
@@ -112,6 +115,8 @@ img{
     padding:1rem 1.2rem;
     padding-right:2rem;
 }
+
+
 header{
     display:flex;
     justify-content:space-between;
