@@ -34,7 +34,7 @@ $("#image").attr('src',profile.getImageUrl())
 $('.data').css('display',"block") 
 */
 $('.g-signin2').css('display','none')
-
+$('#signout-button').css('display','block')
   }
   //sign out in google
   function signOut() {
