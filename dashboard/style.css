@@ -1,0 +1,255 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --color-main:#396aff;
+  --main-accent:#e9eefd;
+  --bg:#fbfefd;
+  --main-text:#4b5876;
+  --shadow:rgba(17,17,26,0.1) 2px 2px 16px;
+}
+
+body {
+  background: var(--bg);
+  overflow-x: hidden;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.sidebar {
+  width: 345px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 1rem  1.2rem;
+}
+
+.sidebar-container {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+  -webkit-box-shadow: var(--shadow);
+          box-shadow: var(--shadow);
+  padding: 1.2rem;
+  overflow-y: auto;
+}
+
+.brand {
+  padding-top: 1rem;
+}
+
+.brand h3 span {
+  color: var(--main-text);
+  font-size: 2.5rem;
+  display: inline-block;
+  margin-right: .5rem;
+}
+
+.sidebar-avartar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70px auto;
+      grid-template-columns: 70px auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #ccc;
+  padding: .1rem .5rem;
+  border-radius: 7px;
+  margin: 2rem 0rem;
+}
+
+.avartar-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar-menu li {
+  margin-bottom: 1rem;
+}
+
+.sidebar-menu a {
+  color: var(--main-text);
+  display: block;
+  padding: .4rem 0rem;
+}
+
+.sidebar-menu a span:first-child {
+  display: inline-block;
+  margin-right: .8rem;
+  font-size: 1.2rem;
+  color: var(--color-main);
+}
+
+.sidebar-card {
+  background: var(--main-accent);
+  text-align: center;
+  padding: .5rem 1rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+  -webkit-box-shadow: var(--shadow);
+          box-shadow: var(--shadow);
+}
+
+.btn {
+  padding: .5rem 1rem;
+  border-radius: 10px;
+}
+
+.btn-main {
+  color: var(--color-main);
+  background: fff;
+}
+
+.main-content {
+  margin-left: 345px;
+  width: calc(100vw-345px);
+  padding: 1rem 1.2rem;
+  padding-right: 2rem;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-title label {
+  display: inline-block;
+  color: var(--color-main);
+  margin-right: 1rem;
+  font-size: 1.8rem;
+}
+
+main {
+  padding-top: 3rem;
+}
+
+.analytics {
+  margin-top: 3rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  -webkit-box-shadow: var(--shadow);
+          box-shadow: var(--shadow);
+  padding: 1.5rem;
+  grid-gap: 0rem 1.5rem;
+}
+
+.analytic {
+  -webkit-box-shadow: var(--shadow);
+          box-shadow: var(--shadow);
+  padding: 1.5rem;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 2rem;
+}
+
+.analytic-info h4 {
+  font-weight: 400;
+  color: #555;
+  font-size: .98rem;
+  margin-bottom: .5rem;
+}
+
+.analytic-info h1 {
+  color: var(--main-text);
+  font-weight: 600;
+}
+
+.analytic-info h1 small {
+  color: var(--main-text);
+  font-weight: .8rem;
+  font-weight: 700;
+}
+
+.text-danger {
+  color: red;
+}
+
+.text-success {
+  color: #2ec3a3;
+}
+
+.analytic:first-child .analytic-icon {
+  background: #dce5ff;
+  color: #6883db;
+}
+
+.analytic:nth-child(2) .analytic-icon {
+  background: #dce5ff;
+  color: #6883db;
+}
+
+.analytic:nth-child(3) .analytic-icon {
+  background: #dce5ff;
+  color: #6883db;
+}
+
+.analytic:nth-child(4) .analytic-icon {
+  background: #dce5ff;
+  color: #6883db;
+}
+
+.analytic-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin-right: .8rem;
+}
+
+.graph-content {
+  border-radius: 15px;
+  -webkit-box-shadow: var(--shadow-box);
+          box-shadow: var(--shadow-box);
+  padding: 1rem;
+}
+/*# sourceMappingURL=style.css.map */

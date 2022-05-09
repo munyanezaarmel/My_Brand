@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name="google-signin-client_id" content="691084854509-gmuhlln96t9ajhl8tlrlmqb5ohkiu93p.apps.googleusercontent.com">
+    
+   
 </head>
 <body class="main-content">
     <header class="section sec1 header active" id="home">
@@ -387,49 +390,22 @@
                 <h2>Welcome Back <span>!!!</span><span class="bg-text">Log in </span></h2>
             </div>
            <form  class="form-login">
-               <input type="email"placeholder="Enter your Email "><br>
-               <input type="password"placeholder="Enter your password "><br>
-                <button>Log In</button><br>
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            <div class="data">
+                <p>names</p>
+                <p id="name">name</p>
+                <p>email</p>
+                <p id="email">email</p>
+                <p>profile pic</p>
+                <img src="" alt="" id="image">
+                <button type="button" id="button" onClick="signOut()">sign out</button>
+            </div>
+               <input type="email" id="email"placeholder="Enter your Email "><br>
+               <input type="password" id="password"placeholder="Enter your password "><br>
+                <button class="button">Log In</button><br>
             <a href="#" class="forget">forgot your password?</a>
+        
            </form>
-            </section>
-            <section class="section sec7"id="dash">
-                <div class="dash-content">
-                <input type="checkbox" id="check">
-                <label for="check">
-                  <i class="fas fa-bars" id="btn"></i>
-                  <i class="fas fa-times" id="cancel"></i>
-                </label>
-                <div class="sidebar">
-                  <header>My Menu</header>
-                  <a href="#" class="active">
-                    <i class="fas fa-qrcode"></i>
-                    <span>Dashboard</span>
-                  </a>
-                  <a href="#">
-                    <i class="fas fa-link"></i>
-                    <span>Shortcuts</span>
-                  </a>
-                  <a href="#">
-                    <i class="fas fa-stream"></i>
-                    <span>Overview</span>
-                  </a>
-                  <a href="#">
-                     <i class="fas fa-calendar"></i>
-                    <span>Events</span>
-                  </a>
-                  <a href="#">
-                    <i class="far fa-question-circle"></i>
-                    <span>About</span>
-                  </a>
-                  <a href="#">
-                    <i class="fas fa-sliders-h"></i>
-                    <span>Services</span>
-                  </a>
-                  <a href="#">
-                    <i class="far fa-envelope"></i>
-                    <span>Contact</span>
-                  </a>
             </section>
     </main>
     <div class="controlls">
@@ -451,16 +427,15 @@
         <div class="control control-6" data-id="login">
             <i class="fas fa-user"></i>
         </div>
-        <div class="control control-7" data-id="dash">
-            <i class="fa fa-align-justify"></i>
-        </div>
     </div>
-
     <div class="theme-btn">
         <i class="fas fa-adjust"></i>
     </div>
     <script src="script.js" defer ></script>
-    
-    
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="blogs.js"defer></script>
+    <script src="login.js" defer></script>
+  
 </body>
 </html>
