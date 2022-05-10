@@ -10,9 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <meta name="google-signin-client_id" content="691084854509-gmuhlln96t9ajhl8tlrlmqb5ohkiu93p.apps.googleusercontent.com">
-    
-   
 </head>
 <body class="main-content">
     <header class="section sec1 header active" id="home">
@@ -390,8 +387,6 @@
                 <h2>Welcome Back <span>!!!</span><span class="bg-text">Log in </span></h2>
             </div>
            <form action='./dashboard/index.html' class="form-login">
-            <div class="g-signin2" data-onsuccess="onSignIn"></div>
-            <button type="button" id="signout-button" onClick="signOut()">sign out</button>
            <!-- <div class="data">
                 <p>names</p>
                 <p id="name">name</p>
@@ -404,9 +399,9 @@
                <input type="email" id="email"placeholder="Enter your Email "><br>
                <input type="password" id="password"placeholder="Enter your password "><br>
                 <button class="button">Log In</button><br>
-            <a href="#" class="forget">forgot your password?</a>
-        
+            <a href="#" class="forget">forgot your password?</a><br>
            </form>
+           <a href="signup.html" class="forget">Register here </a>
             </section>
     </main>
     <div class="controlls">
@@ -432,11 +427,9 @@
     <div class="theme-btn">
         <i class="fas fa-adjust"></i>
     </div>
-    <script src="script.js" defer ></script>
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="blogs.js"defer></script>
-    <script src="login.js" defer></script>
-  
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+    <script src="login.js"></script>
+    <script src="blogs.js"></script>
 </body>
 </html>

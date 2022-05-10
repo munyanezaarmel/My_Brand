@@ -24,24 +24,37 @@ contactform.addEventListener('submit',(e)=>{
 });
 
 */
-//sign in google
-function onSignIn(googleUser) {
-var profile = googleUser.getBasicProfile();
-/*
-$("#name").text(profile.getName())
-$("#email").text(profile.getEmail())
-$("#image").attr('src',profile.getImageUrl())
-$('.data').css('display',"block") 
-*/
-$('.g-signin2').css('display','none')
-$('#signout-button').css('display','block')
+//login
+  const contactform=document.querySelector('.form-login')
+contactform.addEventListener('submit', async (e) => {
+    e.preventDefault();
+const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+  const globalURL= window.location.origin.includes("herokuapp") ? window.location.origin : "http://localhost:3000";
+
+  if (email == '' || password == '') {
+    alert(warning, 'Please fill empty fields !!');
+    return 0;
   }
-  //sign out in google
-  function signOut() {
-    var auth2 = gapi.auth2.getAuthInstance();
-    auth2.signOut().then(function () {
-     alert('User signed out.');
-     $('.g-signin2').css('display','block')
-    // $('.data').css('display',"none")
+  try {
+    const res = await axios.post(`${globalURL}/api/user/login`, {
+      email,
+      password,
     });
+
+    localStorage.setItem(`token`,`${res.data.token}`);
+    alert( 'Logged in successfully');
+    setTimeout(() => {
+       // if(res.data.email=="munyaarmel61@gmail.com")
+      location.assign('./dashboard/index.html');
+    }, 3000);
+  } catch (error) {
+    console.log(error);
+    if (error.response?.data.message) {
+      alert(`${error.response?.data.message}`);
+    } else {
+      alert(`${error.message}`);
+    }
   }
+})
+

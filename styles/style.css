@@ -52,6 +52,13 @@ a {
   font-family: inherit;
 }
 
+.g-signin2 {
+  background-color: var(--color-secondary);
+  width: 20%;
+  height: 50%;
+  border-radius: 30px;
+}
+
 header {
   min-height: 100vh;
   color: var(--color-white);
