@@ -259,6 +259,7 @@
                                 Register your domain name. Your domain name should reflect your products or 
                                 services so that your customers can easily find your business through a search
                             </p>
+                           <a href=""> view more</a>
                         </div>
                     </div>
                     <div class="blog">
@@ -271,6 +272,7 @@
                                 Web Designer career guide is intended to help you take the first steps toward a lucrative career in Web Design. The guide provides an in-depth overview of the web design skills you should learn, 
                                 the best training options, career paths in web design, how to
                             </p>
+                            <a href=""> view more</a>
                         </div>
                     </div>
                     <div class="blog">
@@ -283,6 +285,7 @@
                             I always hear people complain that JavaScript is hard to learn, or that it’s just not clicking for them. This frustrates me. 
                             It frustrates me because I want to help them learn, help it click for them  
                             </p>
+                            <a href=""> view more</a>
                         </div>
                     </div>
                 </div>
@@ -362,21 +365,16 @@
                     <div class="right-contact">
                         <form action="" class="contact-form">
                             <div class="input-control i-c-2">
-                                <input type="text" required placeholder="YOUR NAME">
-                                <input type="email" required placeholder="YOUR EMAIL">
+                                <input type="text" required placeholder="YOUR NAME" id="name-contact">
+                                <input type="email" required placeholder="YOUR EMAIL" id="email-contact">
                             </div>
                             <div class="input-control">
-                                <input type="text" required placeholder="ENTER SUBJECT">
+                                <input type="text" required placeholder="ENTER SUBJECT" id="subject">
                             </div>
                             <div class="input-control">
-                                <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
+                                <textarea name="" id="message" cols="15" rows="8" placeholder="Message Here..."></textarea>
                             </div>
-                            <div class="submit-btn">
-                                <a href="ArmelCV.pdf"download class="main-btn">
-                                    <span class="btn-text">Download CV</span>
-                                    <span class="btn-icon"><i class="fas fa-download"></i></span>
-                                </a>
-                            </div>
+                            <button type="submit" class="contact-button" id="button">send</button>
                         </form>
                     </div>
                 </div>
@@ -431,5 +429,6 @@
     <script src="script.js"></script>
     <script src="login.js"></script>
     <script src="blogs.js"></script>
+    <script src="contact.js"></script>
 </body>
 </html>

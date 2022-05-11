@@ -13,6 +13,7 @@ let renderBlogs=(posts)=>{
             <div class="blog-text">
             <h4>${blog.title}</h4>
             <p>${blog.description}</p>
+            <a href="./blog-details.html?blog_id=${blog._id}">View More</a>
             </div>`
         }
         })

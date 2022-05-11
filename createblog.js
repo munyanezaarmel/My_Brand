@@ -2,15 +2,15 @@ const contactform=document.getElementById('add-form')
 contactform.addEventListener('submit', async (e) => {
     e.preventDefault();
 const title = document.getElementById('title-value').value;
-const body = document.getElementById('body-value').value;
-  const image = document.getElementById('image-value').value;
+const description = document.getElementById('body-value').value;
+  const img = document.getElementById('image-value').value;
   const globalURL= window.location.origin.includes("herokuapp") ? window.location.origin : "http://localhost:3000";
   try {
     const res = await axios.post(`${globalURL}/blogs`, {
         token: localStorage.getItem('token'),
      title,
-      body,
-      image,
+      description,
+      img,
     });
     
    // localStorage.setItem(`token`,`${res.data.token}`);

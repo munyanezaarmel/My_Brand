@@ -1042,6 +1042,17 @@ section {
   text-transform: uppercase;
 }
 
+.contact-button {
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  background-color: var(--color-grey-4);
+  width: 20%;
+  height: 50%;
+  border-radius: 30px;
+  color: var(--color-grey-1);
+}
+
 .email {
   border-radius: 30px;
   font-weight: inherit;

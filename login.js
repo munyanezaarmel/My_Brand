@@ -33,7 +33,7 @@ const email = document.getElementById('email').value;
   const globalURL= window.location.origin.includes("herokuapp") ? window.location.origin : "http://localhost:3000";
 
   if (email == '' || password == '') {
-    alert(warning, 'Please fill empty fields !!');
+    alert('Please fill empty fields !!');
     return 0;
   }
   try {

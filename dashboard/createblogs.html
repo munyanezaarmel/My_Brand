@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/style.scss">
-    <link rel="stylesheet" href="./style.scss">
+    <link rel="stylesheet" href="stylecreate.css">
     <title>create blogs</title>
 </head>
 <body>
+ 
     <form action="" id="add-form">
     <input type="text" id="title-value" placeholder="enter a title of blog" required><br>
-    <textarea name="text" id="body-value" cols="30" rows="10" placeholder="Enter description"></textarea><br>
+    <textarea name="description" id="body-value" cols="30" rows="10" placeholder="Enter description"></textarea><br>
     <input type="url" placeholder="Enter a link image of a blog" id="image-value"><br>
     <button type="submit" id="button-value"> create a blog</button>
-    <a href="#" id="delete"> edit a blog</a>
-    <a href="#" id="edit"> delete a blog</a>
 </form>
+<div class="create-container">
     <table class="content-table">
         <thead>
           <tr>
@@ -31,28 +30,26 @@
             <td>1</td>
             <td>javascript</td>
             <td>javascript is good</td>
-            <td><button>post</button></td>
-            <td><button>delete</button></td>
-            <td><button>edit</button></td>
+            <td><button class="edit">edit</button></td>
+            <td><button class="delete">delete</button></td>
           </tr>
           <tr class="active-row">
             <td>2</td>
             <td>coding</td>
             <td>coding is not good</td>
-            <td><button>post</button></td>
-            <td><button>edit</button></td>
-            <td><button>delete</button></td>
+            <td><button class="edit">edit</button></td>
+            <td><button class="delete">delete</button></td>
           </tr>
           <tr>
            <td>3</button></td>
             <td>javascript for better future</td>
             <td>javascript</td>
-            <td><button>post</button></td>
-            <td><button>edit</button></td>
-            <td><button>delete</button></td>
+            <td><button class="edit">edit</button></td>
+            <td><button class="delete">delete</button></td>
           </tr>
         </tbody>
       </table>
+    </div>
       <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
       <script src="../createblog.js" ></script>
 </body>
