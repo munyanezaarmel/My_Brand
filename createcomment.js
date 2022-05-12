@@ -1,20 +1,17 @@
-const contactform=document.getElementById('add-form')
-contactform.addEventListener('submit', async (e) => {
+const commentform=document.getElementById('form-comment');
+commentform.addEventListener('submit', async (e) => {
     e.preventDefault();
-const title = document.getElementById('title-value').value;
-const description = document.getElementById('body-value').value;
-  const img = document.getElementById('image-value').value;
+const comment = document.getElementById('textarea').value;
+const clear= document.getElementById('clear')
   const globalURL= window.location.origin.includes("github") ? window.location.origin : "http://localhost:3000";
   try {
-    const res = await axios.post(`${globalURL}/blogs`, {
+    const res = await axios.post(`${globalURL}/comment`, {
         token: localStorage.getItem('token'),
-     title,
-      description,
-      img,
+      comment
     });
     
    // localStorage.setItem(`token`,`${res.data.token}`);
-    alert( 'blog created');
+    alert( 'comment posted');
     setTimeout(() => {
       location.reload();
     }, 3000);

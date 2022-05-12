@@ -10,7 +10,9 @@
     <title>blog</title>
 </head>
 <body>
-                        <div class="blog">
+                        
+                       <div class="blog">
+                           <div class="blog-text">
                             <img src="images/start.jpg" alt="">
                             <h4>
                             My journey in Andela training program(ATLP)
@@ -18,11 +20,24 @@
                             <p>
                                 My journey in Andela training program
                                <p>
-                   <fieldset>
-          <legend> <i class="fa fa-comment">comment</i></legend>  
-          <textarea name="comment" id="" cols="30" rows="10" placeholder="comment on this blog"></textarea>
-             <button type="submit"> send comment</button>
+                            </div>
+
+                                <div class="container">
+                                    <h2>comment on this blog</h2>
+                                    <form id="form-comment">
+                                        <textarea id="textarea" placeholder='Add Your Comment'></textarea>
+                                        <div class="btn">
+                                            <input type="submit" value='Comment' id="comment-input">
+                                            <button id='clear'>Cancel</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="comment-section">
+                                </div>
       </div>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
      <script src="single.js"></script>
+     <script src="createcomment.js"></script>
+     <script src="getcomment.js"></script>
 </body>
 </html>

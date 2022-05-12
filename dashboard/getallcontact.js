@@ -1,6 +1,6 @@
 
 let contactCard = document.getElementById('contactCard')
-let globalVal = window.location.origin.includes("herokuapp") ? window.location.origin : "http://localhost:3000";
+let globalVal = window.location.origin.includes("github") ? window.location.origin : "http://localhost:3000";
 let renderBlogs=(contacts)=>{
         contacts.getContact.map(contact=>{
         if(contactCard){
