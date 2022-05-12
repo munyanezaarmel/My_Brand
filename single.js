@@ -2,7 +2,7 @@
 let blogsCard = document.querySelector('.blog-text')
 var feild = document.getElementById('textarea');
 var clear = document.getElementById('clear')
-let globalVal = window.location.origin.includes("github") ? "https://mi-brand.herokuapp.com": "http://localhost:3000";
+let globalVal = "https://mi-brand.herokuapp.com";
 let renderBlogs=(blog)=>{
             blogsCard.innerHTML = `
             <img src="${ blog.img?.includes("http")? blog.img : globalVal+"/img/"+blog.img }"alt="blog image not found">

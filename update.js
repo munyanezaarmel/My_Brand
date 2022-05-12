@@ -15,7 +15,7 @@ function updateModal(id) {
     };
     formSubmit.addEventListener("submit", async (e) => {
         e.preventDefault();
-        alert('Updating blog...');
+        ('Updating blog...');
         const formData = new FormData(formSubmit);
         try {
             await axios
