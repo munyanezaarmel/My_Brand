@@ -4,7 +4,7 @@ contactform.addEventListener('submit', async (e) => {
 const title = document.getElementById('title-value').value;
 const description = document.getElementById('body-value').value;
   const img = document.getElementById('image-value').value;
-  const globalURL= window.location.origin.includes("github") ? window.location.origin : "http://localhost:3000";
+  const globalURL= window.location.origin.includes("github") ? "https://mi-brand.herokuapp.com": "http://localhost:3000";
   try {
     const res = await axios.post(`${globalURL}/blogs`, {
         token: localStorage.getItem('token'),

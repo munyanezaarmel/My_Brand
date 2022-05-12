@@ -1,6 +1,6 @@
 
 let commentCard = document.querySelector('.comment-section')
-let global = window.location.origin.includes("github") ? window.location.origin : "http://localhost:3000";
+let global = window.location.origin.includes("github") ? "https://mi-brand.herokuapp.com": "http://localhost:3000";
 let rendercomment=(comments)=>{
     console.log(comments);
         comments.getAllupdates.map(comment=>{

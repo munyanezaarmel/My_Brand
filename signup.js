@@ -4,7 +4,7 @@ contactform.addEventListener('submit', async (e) => {
 const email = document.getElementById('email').value;
 const username = document.getElementById('name').value;
   const password = document.getElementById('password').value;
-  const globalURL= window.location.origin.includes("github") ? window.location.origin : "http://localhost:3000";
+  const globalURL= window.location.origin.includes("github") ? "https://mi-brand.herokuapp.com": "http://localhost:3000";
 
   if (email == '' || password == '') {
     alert(warning, 'Please fill empty fields !!');

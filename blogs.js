@@ -4,7 +4,7 @@ let blogsCard = document.querySelector('.blogs')
 const titleValue=document.getElementById('title-value')
 const bodyValue=document.getElementById('body-value')
 const imageValue=document.getElementById('image-value')
-let globalVal = window.location.origin.includes("github") ? window.location.origin : "http://localhost:3000";
+let globalVal = window.location.origin.includes("github") ? "https://mi-brand.herokuapp.com": "http://localhost:3000";
 let renderBlogs=(posts)=>{
         posts.getAllBlogs.map(blog=>{
         if(blogsCard){

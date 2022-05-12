@@ -3,7 +3,7 @@ commentform.addEventListener('submit', async (e) => {
     e.preventDefault();
 const comment = document.getElementById('textarea').value;
 const clear= document.getElementById('clear')
-  const globalURL= window.location.origin.includes("github") ? window.location.origin : "http://localhost:3000";
+  const globalURL= window.location.origin.includes("github") ? "https://mi-brand.herokuapp.com": "http://localhost:3000";
   try {
     const res = await axios.post(`${globalURL}/comment`, {
         token: localStorage.getItem('token'),

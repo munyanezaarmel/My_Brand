@@ -1,6 +1,6 @@
 
 let tableCard = document.querySelector('.content-table')
-let globalURLVal = window.location.origin.includes("github") ? window.location.origin : "http://localhost:3000";
+let globalURLVal = window.location.origin.includes("github") ? "https://mi-brand.herokuapp.com": "http://localhost:3000";
 let renderBlogsTable=(posts)=>{
         posts.getAllBlogs.map(blog=>{
         if(tableCard){

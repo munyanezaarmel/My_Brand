@@ -1,5 +1,5 @@
 
-  let globalURL= window.location.origin.includes("github") ? window.location.origin : "http://localhost:3000";
+  let globalURL= window.location.origin.includes("github") ? "https://mi-brand.herokuapp.com": "http://localhost:3000";
 const contact = document.querySelector('.contact-form');
 contact.addEventListener('submit', async (e) => {
   e.preventDefault();
